@@ -14,12 +14,15 @@ function onFillForm(event) {
         alert('всі поля повинні бути заповнені')
     }
     
-    const formData = {
-        email,
-        password
-    }
+    if (email && password) {
+        const formData = {
+            email,
+            password
+        }
 
-    console.log(formData);
-    formEl.reset();
+        console.log(formData);
+        formEl.reset();
+    }
+    
 
 }
