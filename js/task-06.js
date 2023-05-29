@@ -11,6 +11,7 @@ function onValid(event) {
     }
     else {
         inputEl.classList.add('invalid');
+        inputEl.classList.remove('valid');
     }
     
 }
